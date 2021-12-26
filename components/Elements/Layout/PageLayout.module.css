@@ -1,0 +1,27 @@
+.layout {
+    background: var(--backgroundColor);
+}
+
+.header-container {
+    background:  var(--backgroundColor);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #e1e1e1;
+    padding: 0 300px;
+}
+
+.content-container {
+    max-height: 100%;
+    background:  var(--backgroundColor);
+    /*padding: 0 50px;*/
+}
+
+.footer-container {
+    clear: both;
+    position: relative;
+    margin: 0 80px;
+    background: none;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e1e1e1;
+}

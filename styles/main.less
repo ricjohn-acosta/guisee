@@ -1,0 +1,153 @@
+@import "~antd/dist/antd.less";
+
+@primary-color: black; // primary color for all components
+@link-color: #5C987A; // link color
+@success-color: #52c41a; // success state color
+@warning-color: #faad14; // warning state color
+@error-color: #f5222d; // error state color
+@font-size-base: 14px; // major text font size
+@heading-color: rgba(0, 0, 0, 0.85); // heading text color
+@text-color: rgba(0, 0, 0, 0.65); // major text color
+@text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+@disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+//@border-radius-base: 50px; // major border radius
+//@border-color-base: #d9d9d9; // major border color
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // major shadow for layers
+@font-family: NimbusSanL;
+
+//.ant-typography + h1.ant-typography,
+//.ant-typography + h2.ant-typography,
+//.ant-typography + h3.ant-typography,
+//.ant-typography + h4.ant-typography,
+//.ant-typography + h5.ant-typography {
+//  margin: 0;
+//}
+
+h1.ant-typography,
+.ant-typography h1 {
+  margin-bottom: 0;
+  color: black;
+}
+
+h2.ant-typography,
+.ant-typography h2 {
+  margin-bottom: 0;
+}
+
+h3.ant-typography,
+.ant-typography h3 {
+  margin-bottom: 0;
+}
+
+h3.ant-typography,
+.ant-typography h4 {
+  margin-bottom: 0;
+}
+
+
+
+h3.ant-typography,
+.ant-typography h5 {
+  margin-bottom: 0;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+.ant-tabs-tab {
+  display: block;
+}
+
+.ant-card-body {
+  padding: 10px 20px;
+  background-color: #fdfdfa;
+}
+
+.ant-card-hoverable {
+  cursor: pointer;
+}
+
+.ant-modal-footer {
+  border: none;
+}
+
+.ant-modal-header {
+  border: none;
+}
+
+.ant-modal-body {
+  padding: 0;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  //margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  //padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+/* custom scrollbar */
+.scroller:hover::-webkit-scrollbar-thumb {
+  visibility:visible;
+}
+
+// QUILL TEXT EDITOR
+.ql-container {
+  background: white;
+  font-family: NimbusSanL !important;
+}
+
+.ql-toolbar.ql-snow {
+  background: white;
+}
+
+.ql-editor {
+  min-height: 10em;
+}
+
+// REACT-UPLOADER-DROPZONE
+.dzu-dropzone {
+  background: white
+}
+
+
+.scroller::-webkit-scrollbar-thumb  {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
