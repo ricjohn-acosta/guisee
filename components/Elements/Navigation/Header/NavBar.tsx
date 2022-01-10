@@ -37,11 +37,9 @@ const NavBar = () => {
         </Col>
         <Col>
           <Link href="/posts/new">
-            <a>
-              <Button type="primary" icon={<PlusOutlined />}>
-                New post
-              </Button>
-            </a>
+            <Button type="primary" icon={<PlusOutlined />}>
+              New post
+            </Button>
           </Link>
         </Col>
       </Row>

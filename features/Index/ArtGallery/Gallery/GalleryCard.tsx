@@ -23,14 +23,10 @@ export interface GalleryCardProps {
 const GalleryCard: React.FC<GalleryCardProps> = (props) => {
   const {
     id,
-    description,
-    title,
     artist,
-    datePosted,
     assets,
     views,
     likes,
-    tags,
     type,
     topic,
   } = props;
@@ -92,6 +88,7 @@ const GalleryCard: React.FC<GalleryCardProps> = (props) => {
         return (
           <div>
             <img
+              alt="gallery card"
               style={{
                 width: '100%',
                 height: '100%',

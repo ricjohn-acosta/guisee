@@ -34,7 +34,8 @@ module.exports = {
       tsx: 'never',
     }],
     'no-shadow': 'off',
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
   },
   settings: {
     'import/resolver': {
