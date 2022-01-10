@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next -p $PORT",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@ant-design/icons": "4.2.1",
