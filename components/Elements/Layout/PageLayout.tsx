@@ -8,7 +8,12 @@ const {
   Header, Footer, Content,
 } = Layout;
 
-const PageLayout = ({ children, background }): React.ReactElement => (
+interface PageLayoutProps {
+  children?: any,
+  background?: string
+}
+
+const PageLayout: React.FC<PageLayoutProps> = ({ children, background }) => (
   <Layout className={styles.layout}>
     <Header className={styles['header-container']}><NavBar /></Header>
     <Content style={{ background }} className={styles['content-container']}>{children}</Content>

@@ -28,9 +28,13 @@ module.exports = {
     'react/prop-types': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'import/extensions': ['error', 'ignorePackages', {
-      js: 'never', jsx: 'never', ts: 'never', tsx: 'never',
+      js: 'never',
+      jsx: 'never',
+      ts: 'never',
+      tsx: 'never',
     }],
     'no-shadow': 'off',
+    'no-param-reassign': 'off'
   },
   settings: {
     'import/resolver': {

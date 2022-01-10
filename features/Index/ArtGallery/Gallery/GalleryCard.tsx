@@ -2,25 +2,22 @@ import React from 'react';
 import {
   Card, Col, Row, Tag, Typography,
 } from 'antd';
-import {
-  EyeFilled, HeartFilled, CopyOutlined, MessageFilled,
-} from '@ant-design/icons';
+import { CopyOutlined, HeartFilled, MessageFilled } from '@ant-design/icons';
 import ReactPlayer from 'react-player';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 export interface GalleryCardProps {
-  id: string,
-  description: string,
-  title: string,
-  artist: string,
-  datePosted: string,
-  tags: string[],
-  topic: string,
-  assets: string[],
-  views: number,
-  likes: number,
-  type: string
+  id?: string,
+  description?: string,
+  title?: string,
+  artist?: string,
+  datePosted?: string,
+  tags?: string[],
+  topic?: string,
+  assets?: string[],
+  views?: number,
+  likes?: number,
+  type?: string
 }
 
 const GalleryCard: React.FC<GalleryCardProps> = (props) => {
