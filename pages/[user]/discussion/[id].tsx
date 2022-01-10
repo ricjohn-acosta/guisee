@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../../../components/Elements/Layout/PageLayout';
-import UserDiscussion from '../../../page-components/User/Discussion';
+import UserDiscussion from '../../../features/User/Discussion';
 
 const Discussion = () => (
   <PageLayout>

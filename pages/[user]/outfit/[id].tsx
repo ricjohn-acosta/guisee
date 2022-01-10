@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from '../../../components/Elements/Layout/PageLayout';
-import UserOutfit from '../../../page-components/User/Outfit';
+import UserOutfit from '../../../features/User/Outfit';
 
 const Outfit = () => (
   <PageLayout>

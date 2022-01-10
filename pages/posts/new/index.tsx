@@ -1,10 +1,10 @@
 import React from 'react';
 import PageLayout from '../../../components/Elements/Layout/PageLayout';
-import PostForm from '../../../page-components/Posts/PostForm';
+import PostContainer from '../../../features/Posts/PostContainer';
 
 const Index = () => (
   <PageLayout background="#f8f8f8">
-    <PostForm />
+    <PostContainer />
   </PageLayout>
 );
 

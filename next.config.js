@@ -1,9 +1,9 @@
-// const withBundleAnalyzer = require('@next/bundle-analyzer')({
-//   enabled: process.env.ANALYZE === 'true',
-// });
+// // const withBundleAnalyzer = require('@next/bundle-analyzer')({
+// //   enabled: process.env.ANALYZE === 'true',
+// // });
+// //
+// // module.exports = withBundleAnalyzer();
 //
-// module.exports = withBundleAnalyzer();
-
 const withLess = require('@zeit/next-less');
 const lessToJS = require('less-vars-to-js');
 const withPlugins = require('next-compose-plugins');
@@ -79,21 +79,21 @@ const nextConfig = {
 
 module.exports = withPlugins(plugins, nextConfig);
 
-// const withAntdLess = require('next-plugin-antd-less');
-//
-// module.exports = withAntdLess({
-//   // optional
-//   modifyVars: { '@primary-color': '#000000' },
-//   // optional
-//   lessVarsFilePath: './src/styles/variables.less',
-//   // optional
-//   lessVarsFilePathAppendToEndOfContent: false,
-//   // optional https://github.com/webpack-contrib/css-loader#object
-//   cssLoaderOptions: {},
-//
-//   // Other Config Here...
-//
-//   webpack(config) {
-//     return config;
-//   },
-// });
+// // const withAntdLess = require('next-plugin-antd-less');
+// //
+// // module.exports = withAntdLess({
+// //   // optional
+// //   modifyVars: { '@primary-color': '#000000' },
+// //   // optional
+// //   lessVarsFilePath: './src/styles/variables.less',
+// //   // optional
+// //   lessVarsFilePathAppendToEndOfContent: false,
+// //   // optional https://github.com/webpack-contrib/css-loader#object
+// //   cssLoaderOptions: {},
+// //
+// //   // Other Config Here...
+// //
+// //   webpack(config) {
+// //     return config;
+// //   },
+// // });

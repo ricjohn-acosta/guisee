@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import PageLayout from '../components/Elements/Layout/PageLayout';
-import IndexPage from '../page-components/Index/IndexPage';
+import IndexPage from '../features/Index/IndexPage';
 
 const Index = (): React.ReactElement => (
   <PageLayout>
