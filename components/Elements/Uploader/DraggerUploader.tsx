@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Modal, Row, Typography, Upload,
 } from 'antd';
@@ -18,7 +18,7 @@ const DraggerUploader: React.FC<DraggerUploaderProps> = (props) => {
     maxFiles,
   } = props;
 
-  const [fileList, setFileList] = useState([{
+  const [fileList, setFileList] = useState<any>([{
     uid: '-1',
     name: 'image.png',
     status: 'done',
