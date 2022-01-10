@@ -34,7 +34,7 @@ const formats = [
 ];
 
 interface OnChangeHandler {
-  (e: any): void;
+  event: () => void;
 }
 
 type Props = {
