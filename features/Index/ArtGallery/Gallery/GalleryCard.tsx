@@ -34,16 +34,16 @@ const GalleryCard: React.FC<GalleryCardProps> = (props) => {
   const translateTopic = (tag) => {
     switch (tag) {
       case 'style-request':
-        return <Tag color="#f1f1f1" style={{ fontSize: '0.7em', color: 'black' }}>STYLE ME</Tag>;
+        return <Tag color="#e5e5e5" style={{ fontSize: '0.7em', color: 'black' }}>STYLE ME</Tag>;
 
       case 'fit-check':
-        return <Tag color="#f1f1f1" style={{ fontSize: '0.7em', color: 'black' }}>OUTFIT SHOWCASE</Tag>;
+        return <Tag color="#e5e5e5" style={{ fontSize: '0.7em', color: 'black' }}>OUTFIT SHOWCASE</Tag>;
 
       case 'discussion':
-        return <Tag color="#f1f1f1" style={{ fontSize: '0.7em', color: 'black' }}>DISCUSSION</Tag>;
+        return <Tag color="#e5e5e5" style={{ fontSize: '0.7em', color: 'black' }}>DISCUSSION</Tag>;
 
       case 'listing':
-        return <Tag color="#f1f1f1" style={{ fontSize: '0.7em', color: 'black' }}>FOR SALE</Tag>;
+        return <Tag color="#e5e5e5" style={{ fontSize: '0.7em', color: 'black' }}>FOR SALE</Tag>;
 
       default:
         return null;
