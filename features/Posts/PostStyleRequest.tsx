@@ -147,11 +147,11 @@ const PostStyleRequest = () => {
     <div style={{ height: '100%' }}>
       <div>
         <div style={{ marginBottom: '20px' }}>
-          <Typography>
+          <Typography.Title level={5} style={{ fontWeight: 'bolder' }}>
             <InfoCircleOutlined style={{ fontSize: '16px' }} />
             &nbsp;
             Request for styling from the community
-          </Typography>
+          </Typography.Title>
         </div>
         <Input placeholder="Title" />
         <div style={{ marginTop: '6px' }}>

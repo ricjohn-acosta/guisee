@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {
-  Button, Checkbox, Col, Form, Input, Popover, Row, Tag, Typography,
+  Button, Checkbox, Form, Input, Popover, Row, Tag, Typography,
 } from 'antd';
-import { CloseCircleFilled, InfoCircleOutlined, PlusOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import PostCreate from './PostCreate';
 import EditableTagGroup from '../../components/Elements/Tags/EditableTagGroup';
 
@@ -46,11 +46,11 @@ const PostDiscussion = () => {
   return (
     <div>
       <div style={{ marginBottom: '20px' }}>
-        <Typography>
+        <Typography.Title level={5} style={{ fontWeight: 'bolder' }}>
           <InfoCircleOutlined style={{ fontSize: '16px' }} />
           &nbsp;
           Have a convo about current fashion trends or pop culture!
-        </Typography>
+        </Typography.Title>
       </div>
       <Input placeholder="Title" />
       <div style={{ marginTop: '6px' }}>

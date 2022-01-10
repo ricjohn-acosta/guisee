@@ -1,13 +1,9 @@
 // Post.tsx
-import {
-  Button, Form, Input, Typography,
-} from 'antd';
-import React, { useState } from 'react';
+import { Form } from 'antd';
+import React from 'react';
 import dynamic from 'next/dynamic';
 
 const { Item } = Form;
-const { TextArea } = Input;
-const { Title } = Typography;
 const TextEditor = dynamic(() => import('../../components/Elements/TextEditor/TextEditor'));
 
 interface IPostCreate {

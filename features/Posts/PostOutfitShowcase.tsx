@@ -12,7 +12,6 @@ const { Item } = Form;
 const DropzoneLayout = ({
   input,
   previews,
-  submitButton,
   dropzoneProps,
   files,
   extra: { maxFiles },
@@ -115,6 +114,7 @@ const DropzoneLayout = ({
                   <CloseCircleFilled onClick={() => preview.props.fileWithMeta.remove()} />
                 </span>
                 <img
+                  alt={preview.props.meta.name}
                   style={{
                     height: '100%',
                     width: '100%',

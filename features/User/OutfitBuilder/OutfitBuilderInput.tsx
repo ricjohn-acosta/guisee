@@ -25,12 +25,13 @@ const OutfitBuilderInput = ({
     );
   }
   return (
-    <label style={{
-      cursor: 'pointer',
-      width: '100%',
-      height: '100%',
-      padding: 15,
-    }}
+    <label
+      style={{
+        cursor: 'pointer',
+        width: '100%',
+        height: '100%',
+        padding: 15,
+      }}
     >
       {
 
@@ -56,6 +57,7 @@ const OutfitBuilderInput = ({
         style={{ display: 'none' }}
         type="file"
         id="upload"
+        name="upload-input"
         accept={accept}
         multiple
         onChange={(e) => {

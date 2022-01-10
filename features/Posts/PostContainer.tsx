@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Input, Row, Tabs, Typography,
-} from 'antd';
+import { Tabs, Typography } from 'antd';
 import PostOutfitShowcase from './PostOutfitShowcase';
 import PostStyleRequest from './PostStyleRequest';
 import PostDiscussion from './PostDiscussion';
@@ -30,7 +28,7 @@ const PostContainer = () => (
         <TabPane tab="Discussion" key="4">
           <PostDiscussion />
         </TabPane>
-        <TabPane tab="List an item" key="5">
+        <TabPane tab="List a product" key="5">
           <PostListing />
         </TabPane>
       </Tabs>
