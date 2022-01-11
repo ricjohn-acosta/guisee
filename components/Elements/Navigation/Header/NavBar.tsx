@@ -7,20 +7,25 @@ import {
   BellOutlined, InboxOutlined, PlusOutlined, SearchOutlined, UserOutlined,
 } from '@ant-design/icons';
 import styles from './NavBar.module.css';
+import useModal from '../../../../hooks/useModal';
+import AuthModal from '../../../../features/Authentication/AuthModal';
 
 const NavBar = () => {
-  const authenticated = true;
+  const [modalOpen, setModalOpen, toggleModal] = useModal();
+
+  const authenticated = false;
 
   const displayMenuItems = () => {
     if (!authenticated) {
       return (
         <>
-          <Menu.Item>Sign up</Menu.Item>
+          <Menu.Item><Typography style={{ fontWeight: 'bolder' }}>Login</Typography></Menu.Item>
           <Menu.Item style={{ borderBottom: 'none' }}>
-            <Button type="primary">
+            <Button onClick={toggleModal} type="primary">
               Sign
-              in
+              up
             </Button>
+            <AuthModal open={modalOpen} onClose={() => setModalOpen(false)} />
           </Menu.Item>
         </>
       );

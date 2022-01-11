@@ -1,6 +1,6 @@
 .navbar-menu-container {
     background: transparent;
-    float: right;
+    justify-content: end;
 }
 
 .logo {
