@@ -13,7 +13,7 @@ import AuthModal from '../../../../features/Authentication/AuthModal';
 const NavBar = () => {
   const [modalOpen, setModalOpen, toggleModal] = useModal();
 
-  const authenticated = false;
+  const authenticated = true;
 
   const displayMenuItems = () => {
     if (!authenticated) {

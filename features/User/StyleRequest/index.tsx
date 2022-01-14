@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import {
-  Avatar, Button, Col, Row, Tag, Typography, Modal,
-  Tabs, Rate, Upload,
+  Avatar, Button, Col, Modal, Rate, Row, Tabs, Tag, Typography,
 } from 'antd';
 import {
-  AppstoreOutlined, EyeFilled, HeartFilled, UserOutlined, InfoCircleOutlined,
+  AppstoreOutlined,
+  EyeFilled,
+  HeartFilled,
+  InfoCircleOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
-import Dropzone from 'react-dropzone-uploader';
 import { GalleryCardProps } from '../../Index/ArtGallery/Gallery/GalleryCard';
 import Comments from '../Discussion/Comments';
 import { ownedClothes, stylePreference } from '../../../utils/mockData/mockStylePreference';
-import OutfitBuilder from '../OutfitBuilder/OutfitBuilder';
+import OutfitBuilderContainer from '../OutfitBuilderV2/OutfitBuilderContainer';
 
 const StyleRequest: React.FC<GalleryCardProps> = () => {
   const { TabPane } = Tabs;
@@ -226,16 +228,39 @@ const StyleRequest: React.FC<GalleryCardProps> = () => {
                       builder
                     </Button>
                     <Modal
+                      style={{
+                        height: '100%',
+                        marginTop: '20px',
+                      }}
                       centered
                       visible={isModalVisible}
                       onCancel={hideModal}
-                      width={800}
-                      footer={[
-                        <Button onClick={hideModal}>Cancel</Button>,
-                        <Button type="primary">Next</Button>,
-                      ]}
+                      width="100%"
+                      footer={(
+                        <div style={{
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                        }}
+                        >
+                          <Button style={{ width: '120px' }} size="large" onClick={hideModal}>
+                            Save
+                            draft
+                          </Button>
+                          <Button
+                            style={{ width: '400px' }}
+                            size="large"
+                            onClick={hideModal}
+                            type="primary"
+                          >
+                            Submit
+                          </Button>
+                        </div>
+                      )}
                     >
-                      <OutfitBuilder title="Outfit builder" tabPaddingLeft="24px" />
+                      {/* <OutfitBuilder title="Outfit builder" tabPaddingLeft="24px" height="80v
+                      h" /> */}
+                      <OutfitBuilderContainer />
                     </Modal>
                   </div>
                 </Row>
